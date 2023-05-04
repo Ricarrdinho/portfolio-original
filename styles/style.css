@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family= Sigmarfamília= Roboto & & display =swap');
+
+:root {
+    --cor-primaria: #000000;  
+    --cor-secundaria: #f6f6f6;
+    --cor-tercearia: #f2600c;
+    --cor-hover: #272727;
+
+    --fonte-primaria: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    box-sizing: border-box;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+
+}
+
+.cabecalho {
+    padding: 4% 0% 0% 20%;
+}
+
+.cabecalho__menu {
+    display: flex;
+    gap: 80px;
+}
+
+.cabecalho__menu__link {
+   font-family: var(--fonte-primaria);
+   font-size: 1.87rem;
+   font-weight: 600;
+   color: var(--cor-tercearia);
+   text-decoration: none;
+} 
+
+.apresentacao {
+    padding: 5% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 82px;
+}
+
+.apresentacao__conteudo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.apresentacao__conteudo__titulo {
+    font-size: 2.75rem;
+    font-family: var(--fonte-primaria);
+}
+
+.titulo-destaque {
+    color: var(--cor-tercearia);
+}
+
+.apresentacao__conteudo__texto {
+    font-size: 1.87rem;
+    font-family: 'Sigmar', cursiva;
+}
+
+.apresentacao__links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+}
+
+.apresentacao__links__subtitulo {
+    font-size: 1.87rem;
+    font-family: var(--fonte-primaria);
+}
+
+.apresentacao__links__navegacao {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    border: 2px solid var(--cor-tercearia);
+    width: 50%;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    padding: 24.5px 0;
+    text-decoration: none;
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-primaria);
+
+}
+
+.apresentacao__links__navegacao:hover {
+    background-color: var(--cor-hover);
+}
+
+.foto__lorena {
+    width: 50%;
+    border: 2px solid var(--cor-tercearia);
+    border-radius: 15px;   
+}
+
+
+.rodape {
+    padding: 24px;
+    color: var(--cor-primaria);
+    background-color: var(--cor-tercearia);
+    text-align: center;
+    font-family: var(--fonte-primaria);
+    font-size: 1.5rem;
+}
+
+@media (max-width:1200px) {
+    .cabecalho {
+        padding: 10%;
+    }
+
+    .cabecalho__menu {
+        justify-content: center;
+    }
+
+    .apresentacao {
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .apresentacao__conteudo {
+        width: auto;
+    }
+}
